@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane fx:id="splitPaneMain" dividerPositions="0.7854757929883138" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.DataHandel.DataHandelMainController">
+   <items>
+      <ScrollPane>
+         <content>
+            <VBox fx:id="vbox_chart" />
+         </content>
+      </ScrollPane>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0">
+         <content>
+            <AnchorPane fx:id="anchorPane_settings" minHeight="0.0" minWidth="0.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="图表绘制" textFill="#00b7f4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" spacing="5.0">
+                           <children>
+                              <Label text="文件路径" />
+                              <TextField fx:id="textField_drawing_file_path" />
+                              <Button fx:id="btn_drawing_select_file" mnemonicParsing="false" text="选择文件">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="btn_drawing_draw" mnemonicParsing="false" text="绘制图表">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Label text="日志监控" textFill="#00b7f4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="100.0" spacing="5.0">
+                           <children>
+                              <Button fx:id="btn_monitor_ios_settings" mnemonicParsing="false" prefHeight="27.0" text="ios包名与日志路径设置">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="btn_monitor_start" mnemonicParsing="false" text="开始监控">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Label text="辅助" textFill="#00b7f4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="150.0" spacing="5.0">
+                           <children>
+                              <Button fx:id="btn_statistics_show" mnemonicParsing="false" text="查看统计">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="btn_save_log" mnemonicParsing="false" text="保存日志" />
+                              <Button fx:id="btn_expand_charts" mnemonicParsing="false" text="展开图表" />
+                              <HBox alignment="TOP_RIGHT" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="textField_search" />
+                                    <Button fx:id="btn_search" mnemonicParsing="false" text="搜索" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label text="配置" textFill="#00b7f4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" spacing="5.0">
+                           <children>
+                              <Button fx:id="btn_settings" mnemonicParsing="false" text="数据提取设置">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                              <Label text="生效配置表">
+                                 <VBox.margin>
+                                    <Insets right="150.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lbl_settings_valid" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </items>
+</SplitPane>

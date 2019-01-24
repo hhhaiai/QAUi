@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane_Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.PicInspect.PicInspectMainController">
+   <children>
+      <VBox prefWidth="400.0" spacing="5.0">
+         <children>
+            <Label text="图片查看器信息" textFill="#0094f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="lbl_inspect_info" textFill="#07e526" />
+               </children>
+            </HBox>
+            <Label text="选择文件夹" textFill="#0094f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox spacing="5.0">
+               <children>
+                  <TextField fx:id="tField_select_folder" prefHeight="27.0" prefWidth="250.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btn_select_floder" mnemonicParsing="false" text="选择">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="btn_add" mnemonicParsing="false" prefHeight="27.0" prefWidth="165.0" text="创建">
+               <VBox.margin>
+                  <Insets left="120.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label text="统一控制器" textFill="#0094f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox spacing="5.0">
+               <children>
+                  <Label prefHeight="27.0" text="图片缩放百分比" />
+                  <TextField fx:id="tField_pic_zoom" prefHeight="27.0" prefWidth="60.0" />
+                  <Label prefHeight="27.0" text="名称调整" />
+                  <TextField fx:id="tField_pic_name_adjust" prefHeight="27.0" prefWidth="60.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="btn_pic_set" mnemonicParsing="false" text="更改">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_set_ontop" mnemonicParsing="false" text="置顶" />
+                  <Button fx:id="btn_close_all" mnemonicParsing="false" text="关闭" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="65.0" text="关键字" />
+                  <TextField fx:id="tField_controller_serach" prefHeight="27.0" prefWidth="201.0" />
+                  <Button fx:id="btn_controller_serach" mnemonicParsing="false" text="搜索" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="btn_controller_slide" mnemonicParsing="false" text="幻灯片">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_controller_scroll" mnemonicParsing="false" text="滚轮" />
+                  <Button fx:id="btn_controller_previous" mnemonicParsing="false" text="上一张">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_controller_next" mnemonicParsing="false" text="下一张">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TitledPane fx:id="titledPane_pic_list" animated="false" expanded="false" text="主窗体图片列表">
+               <content>
+                  <ScrollPane fx:id="scrollPane_pic_list" fitToHeight="true" fitToWidth="true">
+                     <content>
+                        <VBox fx:id="vbox_pic_list" spacing="5.0">
+                           <padding>
+                              <Insets bottom="5.0" left="35.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </TitledPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

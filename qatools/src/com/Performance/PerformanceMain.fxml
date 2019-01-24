@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.7395659432387313" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Performance.PerformanceMainController">
+  <items>
+      <ScrollPane>
+        <content>
+          <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" />
+        </content>
+      </ScrollPane>
+      <ScrollPane prefWidth="300.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="300.0" text="Android性能监控" textFill="#00aaff">
+                           <font>
+                              <Font name="System Font" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="应用包名">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="choice_packagelist" prefHeight="27.0" />
+                        <Label text="设置">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="btn_set_xAxis_num" disable="true" mnemonicParsing="false" text="X轴数量" visible="false">
+                           <VBox.margin>
+                              <Insets left="180.0" />
+                           </VBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button fx:id="btn_set_packagenames" mnemonicParsing="false" text="包名设置">
+                           <VBox.margin>
+                              <Insets left="200.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label text="数据统计">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox>
+                           <children>
+                              <Label fx:id="lbl_statistics_time" />
+                              <Label fx:id="lbl_statistics_data" alignment="TOP_LEFT" prefHeight="250.0" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                           <children>
+                              <Button fx:id="btn_statistics_clear" mnemonicParsing="false" text="清空数据">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btn_statistics" mnemonicParsing="false" text="开始统计">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="设备信息">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_device_info" />
+                        <Button fx:id="btn_save_data" mnemonicParsing="false" text="保存数据">
+                           <VBox.margin>
+                              <Insets left="180.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btn_start_monitor" mnemonicParsing="false" onAction="#btn_start_monitor_click" text="开始监控">
+                           <VBox.margin>
+                              <Insets left="180.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+  </items>
+</SplitPane>

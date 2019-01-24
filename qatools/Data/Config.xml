@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--QA tools-->
+<!--
+explain:	
+	author:Then
+	version:V20170417
+	-->
+<Config> 
+  <!-- Android sdk 路径 -->  
+  <androidSDK>/Users/auto/Documents/AndroidSDK</androidSDK>  
+  <!--IOS 命令路径  -->  
+  <MACcmd>/usr/local/bin</MACcmd>  
+  <!-- 报告存储路径,默认为桌面QAUiReport-->  
+  <reportPath>/Users/auto/Desktop/</reportPath>  
+  <!--Base config-->  
+  <Base_firstInit>true</Base_firstInit>  
+  <!-- Logs config -->  
+  <Logs_crashPath>test2,/sdcard/;test, ;</Logs_crashPath>  
+  <Logs_inputcmd>logcat -v threadtime</Logs_inputcmd>  
+  <Logs_highlight>GPUNormalLiveEffec,-16724992;Audio,-13369600;open,-16776961;</Logs_highlight>  
+  <IOS_Logs_highlight>AnchorTrusted,-52480;</IOS_Logs_highlight>  
+  <IOS_Logs_inputcmd>AnchorTrusted</IOS_Logs_inputcmd>  
+  <IOS_Logs_App_highlight>产生日志,-205;</IOS_Logs_App_highlight>  
+  <IOS_Logs_App_inputcmd/>  
+  <IOS_Logs_App_path>com.test,/Library/__PTLogFolder;com.test.test,/Library/__PTLogFolder;</IOS_Logs_App_path>  
+  <!-- Monkey config -->  
+  <Monkey_arow>40</Monkey_arow>  
+  <Monkey_arowword>80</Monkey_arowword>  
+  <Monkey_showduplicate>false</Monkey_showduplicate>  
+  <Monkey_isreconnect>true</Monkey_isreconnect>  
+  <Monkey_filterPackages>test1,com.test;settings,com.android.settings;</Monkey_filterPackages>  
+  <Monkey_Customize>-p 'package' -p 'package' --ignore-crashes --ignore-timeouts --ignore-security-exceptions</Monkey_Customize>  
+  <!-- Live -->  
+  <Live_username>cpp@163.com</Live_username>  
+  <Live_password>123456</Live_password>  
+  <Live_Server>QA</Live_Server>  
+  <Live_videopath>/Users/Then/Documents/MV/akb48_真夏90min.mp4</Live_videopath>  
+  <Live_loop>false</Live_loop>  
+  <Live_config_title>QA测试MAC</Live_config_title>  
+  <Live_config_coverUrl>https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=64426c6cc7fc1e17e9b284632bf99d66/1e30e924b899a9016be3804c15950a7b0308f5f2.jpg</Live_config_coverUrl>  
+  <Live_config_platform>android</Live_config_platform>  
+  <Live_config_showlocation>true</Live_config_showlocation>  
+  <Live_config_tags>颜值,身材</Live_config_tags>  
+  <!-- C360bigdata -->  
+  <Bigdata_filter_event>get_sticker_list_success;</Bigdata_filter_event>  
+  <Bigdata_note_path>/Users/auto/Desktop/bigdata.xlsx</Bigdata_note_path>  
+  <!-- performance -->  
+  <Performance_packagename>settings=com.android.settings;</Performance_packagename>  
+  <Performance_xAxis_num>20</Performance_xAxis_num>  
+  <!-- PicInspect -->  
+  <PicInspect_folder></PicInspect_folder>  
+  <PicInspect_zoom>35</PicInspect_zoom>  
+  <!-- dataHandel -->  
+  <DataHandel_filepath>/Users/auto/Desktop/FPS/jpfps/hot.txt</DataHandel_filepath> 
+</Config>

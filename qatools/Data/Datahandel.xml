@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	<item>
+	<flag>hehe</flag>
+	<effective>true</effective>
+	  <simple>09-06 17:22:21.155 11680 12434 D HawkeyeD: onGlFpsCalculated, key = Activity:vStudio.Android.Camera360.activity.CameraMainActivity, lastFps = 31</simple>  
+	  <regex>([\d-]+\s[\d:.]+)[\d\s]+D HawkeyeD: onGlFpsCalculated, key = Activity:.*?\.(\w+).(\w+), lastFps = (\d+)</regex>  
+	  <name>time;flag;flag;帧率;</name>  
+	  <group_num>1</group_num>  
+	  <group_type>avg</group_type>  
+	  <group_interval>500</group_interval>  
+	  <drawing_timeperiod>MM-dd HH:mm:ss.SSS;09-07 10:42:51.529/09-07 10:43:21.691;09-07 10:46:56.901/09-07 10:47:27.068;09-07 10:51:06.462/09-07 10:51:36.554;09-07 10:55:28.888/09-07 10:55:59.732;09-07 11:00:09.932/09-07 11:00:40.238;09-07 11:03:56.285/09-07 11:04:26.400;09-07 11:08:59.432/09-07 11:09:29.729;09-07 11:12:45.307/09-07 11:16:36.983;</drawing_timeperiod> 
+	</item>
+
+ --><root>
+<settings>
+	
+	
+<item><flag>ios测试</flag><effective>false</effective><simple>[09-12 17:31:04:994][D] Default-GCD -[PGFBLog:93]: 产生日志:1536744664994 uid: event_id:advance_element_action </simple><regex>\[([\d+\s-:]+)\]\[D\].*产生日志:(\d+)</regex><name>time;测试;</name><group_num>1</group_num><group_type>avg</group_type><group_interval>500</group_interval><drawing_timeperiod>!MM-dd HH:mm:ss.SSS;09-07 10:42:51.529/09-07 10:43:21.691;09-07 10:46:56.901/09-07 10:47:27.068;09-07 10:51:06.462/09-07 10:51:36.554;09-07 10:55:28.888/09-07 10:55:59.732;09-07 11:00:09.932/09-07 11:00:40.238;09-07 11:03:56.285/09-07 11:04:26.400;09-07 11:08:59.432/09-07 11:09:29.729;09-07 11:12:45.307/09-07 11:16:36.983;</drawing_timeperiod></item><item><flag>性能displayed</flag><effective>true</effective><simple>09-13 08:03:04.944 +0000  1548  1570 I ActivityManager: Displayed com.haha.haha/.mainpage.MainActivity: +784ms (total +1s686ms)</simple><regex>([\d-]+\s[\d:.]+).*?ActivityManager: Displayed ([/\w.]+): \+([\ds]+)ms</regex><name>time;flag;毫秒;</name><group_num>1</group_num><group_type>avg</group_type><group_interval>0</group_interval><drawing_timeperiod>!MM-dd HH:mm:ss.SSS;09-07 10:42:51.529/09-07 10:43:21.691;09-07 10:46:56.901/09-07 10:47:27.068;09-07 10:51:06.462/09-07 10:51:36.554;09-07 10:55:28.888/09-07 10:55:59.732;09-07 11:00:09.932/09-07 11:00:40.238;09-07 11:03:56.285/09-07 11:04:26.400;09-07 11:08:59.432/09-07 11:09:29.729;09-07 11:12:45.307/09-07 11:16:36.983;</drawing_timeperiod></item></settings>
+
+
+</root>
