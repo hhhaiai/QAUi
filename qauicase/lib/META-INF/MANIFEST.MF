@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Class-Path: lib/QAUiFramework.jar lib/mix/activation1.1.1.jar lib/mix/
+ chimpchat-26.0.0-dev.jar lib/mix/client-combined-3.13.0.jar lib/mix/c
+ ommons-lang3-3.7.jar lib/mix/ddmlib-26.0.0-dev.jar lib/mix/dom4j-2.1.
+ 1.jar lib/mix/java-client-6.1.0.jar lib/mix/javax.mail.1.6.1.jar lib/
+ mix/jaxen-1.1.6.jar lib/mix/jmf.jar lib/mix/json.jar lib/mix/log4j-ap
+ i-2.6.2.jar lib/mix/log4j-core-2.6.2.jar lib/mix/log4j-slf4j-impl-2.6
+ .2.jar lib/mix/selenium-server-standalone-3.13.0.jar lib/mix/slf4j-ap
+ i-1.7.21.jar lib/mix/uiautomator.jar lib/mix/websocket-api.jar
+Main-Class: com.main.Runner
+

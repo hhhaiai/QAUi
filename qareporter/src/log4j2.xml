@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE xml>  
+<Configuration status="off" monitorInterval="3600">  
+  
+    <properties>  
+
+       <property name="LOG_HOME">${sys:catalina.home}/Logs/QAreporter</property>
+               <!--  <property name="LOG_HOME">/home/tools/tomcat7/webapps/QAchart/Logs</property>   -->
+               <!--         <property name="LOG_HOME">E:/EclipseWorkProject/QAchart/Logs</property>   -->
+        <property name="FILE_NAME">log</property>  
+    </properties>  
+  
+    <Appenders>  
+        <Console name="Console" target="SYSTEM_OUT">  
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%c,%M:%L] %n%-level: %msg%n" />  
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>  
+        </Console>  
+  
+        <RollingRandomAccessFile name="Logfile"  
+            fileName="${LOG_HOME}/${FILE_NAME}.txt" filePattern="${LOG_HOME}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd}-%i.txt.gz">  
+            <PatternLayout  
+                pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%c,%M,%L]:      %msg%n" />  
+            <Policies>  
+                <TimeBasedTriggeringPolicy />  
+                <SizeBasedTriggeringPolicy size="10 MB" />  
+            </Policies>  
+            <DefaultRolloverStrategy max="1000" />  
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>  
+        </RollingRandomAccessFile>  
+    </Appenders>  
+      
+    <Loggers>  
+        <Root level="info">  
+            <AppenderRef ref="Console" />  
+            <AppenderRef ref="Logfile" />  
+        </Root>  
+    </Loggers>  
+</Configuration>  

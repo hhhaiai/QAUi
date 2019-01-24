@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/activation1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/chimpchat-26.0.0-dev.jar"/>
+	<classpathentry kind="lib" path="lib/client-combined-3.13.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.7.jar"/>
+	<classpathentry kind="lib" path="lib/ddmlib-26.0.0-dev.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/java-client-6.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail.1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/jmf.jar"/>
+	<classpathentry kind="lib" path="lib/json.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-core-2.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-slf4j-impl-2.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-server-standalone-3.13.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="lib/uiautomator.jar"/>
+	<classpathentry kind="lib" path="lib/websocket-api.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

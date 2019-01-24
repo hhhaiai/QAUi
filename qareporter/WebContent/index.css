@@ -1,0 +1,336 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+/*返回顶部按钮*/
+.container{
+
+}
+.refreshCataInfo{
+	color:white;
+	background-color:white;
+}
+.scrollTop{
+	position: fixed;
+	width:40px;
+	height:40px;
+	background: url('./pic/scrollTop.png')no-repeat;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size:100% 100%;
+	right:10%;
+	bottom:8%;
+	opacity:0.6;
+}
+.searchlistshow{
+
+}
+.searchTable{
+    border-collapse: separate;   
+	border:none;
+	border-spacing:0px 5px;
+    width:100%;
+	height:100%;
+}
+.searchTable th{
+	text-align:center;
+	color:#999999;
+}
+.searchTable tr{
+	text-shadow:none;
+}
+.searchTable td{
+	text-align:center;
+}
+.platform{
+	background-color:#678cec;
+	width:100%;
+	text-align:center;
+	height:70px;
+}
+.platform li{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	cursor: pointer;
+    text-align: center;
+    height:70px;
+}
+.AndroidButton{
+
+}
+.iOSButton{
+
+}
+.AndroidButton img {
+/* Spinning Social Icons Widget By www.mudwnp.blogspot.com */
+-moz-transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+transition: all 0.8s ease-in-out;
+}
+.AndroidButton img:hover {
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+
+.iOSButton img {
+/* Spinning Social Icons Widget By www.mudwnp.blogspot.com */
+-moz-transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+transition: all 0.8s ease-in-out;
+}
+.iOSButton img:hover {
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+
+/*详情*/
+.btn-slide, .btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #0099cc;
+    margin:0px;
+    transition: .5s;
+}
+
+.btn-slide2 {
+    border: 2px solid #efa666;
+}
+
+.btn-slide:hover {
+    background-color: #0099cc;
+}
+
+.btn-slide2:hover {
+    background-color: #efa666;
+}
+
+.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
+    right: 100%;
+    margin-right: -30px;
+    background-color: #fdfdfd;
+    color: #0099cc;
+}
+
+.btn-slide2:hover span.circle2 {
+    color: #efa666;
+}
+
+.btn-slide:hover span.title, .btn-slide2:hover span.title2 {
+    right: 40px;
+    opacity: 0;
+}
+
+.btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {
+    opacity: 1;
+    right: 40px;
+}
+
+.btn-slide span.circle, .btn-slide2 span.circle2 {
+    display: block;
+    background-color: #0099cc;
+    color: #fff;
+    position: absolute;
+    float: right;
+    margin: 1px;
+    line-height: 30px;
+    height: 28px;
+    width: 28px;
+    top: 0;
+    right: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn-slide2 span.circle2 {
+    background-color: #efa666;
+}
+
+.btn-slide span.title,
+  .btn-slide span.title-hover, .btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    position: absolute;
+    right: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+    color: #30abd5;
+    transition: .5s;
+}
+
+.btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    color: #efa666;
+    right: 80px;
+  }
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+    right: 80px;
+    opacity: 0;
+}
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+    color: #fff;
+}
+
+/*开关*/
+*:before,*:after {
+  box-sizing: border-box;
+}
+.toggle {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  color: white;
+  outline: 0;
+  text-decoration: none;
+  border-radius: 100px;
+  background: #fdfdfd;
+  border: 2px solid #0099cc;
+  transition: all 500ms;
+}
+.toggle:active {
+  background-color: #e6f3ff;
+}
+.toggle:hover:not(.toggle--moving):after {
+  background-color: #e6f3ff;
+}
+.toggle:after {
+  display: block;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 3px;
+  width: calc(50% - 4px);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: #e6f3ff;
+  border: 2px solid;
+  transition: all 500ms;
+}
+
+.toggle--on:after {
+  content: 'On';
+  border-radius: 30px 5px 5px 30px;
+  color: #0099cc;
+}
+
+.toggle--off:after {
+  content: 'Off';
+  border-radius: 5px 30px 30px 5px;
+  transform: translate(100%, 0);
+  color: #0099cc;
+}
+
+.toggle--moving {
+  background-color: white;
+}
+.toggle--moving:after {
+  color: transparent;
+  border-color: #0099cc;
+  background-color: #e6f3ff;
+  transition: color 0s, transform 500ms, border-radius 500ms,           background-color 500ms;
+}
+
+/*按钮*/
+.btn {
+  float:none;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  background: white;
+  border-radius: 3px;
+  border:1px solid;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 7px 11px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  /* so nobody selects the inside text on button */
+  user-select: none;
+  /* Smoothing out hover using css3 transitions, if not, the pressed button effect looks a bit hard */
+  transition: all 0.2s ease;
+}
+
+.btn-small {
+  line-height: 30px;
+  width: 100px;
+  height: 50px;
+}
+.submit {
+  background: #0099cc;
+  box-shadow: 0px 3px #028d96;
+  color: white;
+}
+.submit:hover {
+  background: #01d1de;
+  box-shadow: 0px 3px #006066;
+  color: white;
+}
+/* Imitate a pressed effect for buttons */
+.submit:active {
+  box-shadow: 0px 0px #717a33;
+  top: 4px;
+}
+
+
+.cancel {
+  background: #00ddeb;
+  box-shadow: 0px 5px #028d96;
+  color: white;
+}
+
+.cancel:hover {
+  background: #01d1de;
+  box-shadow: 0px 4px #006066;
+  color: white;
+}
+
+/* Imitate a pressed effect for buttons */
+.cancel:active {
+  top: 4px;
+  box-shadow: 0px 0px #d3545d;
+}
+
+.info {
+  background: #d9008f;
+  box-shadow: 0px 5px #5f023f;
+  color: white;
+}
+
+.info:hover {
+  background: #b60178;
+  box-shadow: 0px 4px #3f002a;
+  color: white;
+}
+
+/* Imitate a pressed effect for buttons */
+.info:active {
+  top: 4px;
+  box-shadow: 0px 0px #d3545d;
+}

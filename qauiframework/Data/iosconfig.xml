@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 场景配置 PS=场景类-->		        <!-- 自定义   -->
+    <scene>
+
+    </scene>
+            <!-- iOS场景设置模板,可以在Data文件夹中额外创建多个以iosscene_开头的xml文件,用来存放不同场景
+    <item>
+        #场景包名.类名***(带*号为必填项)
+        <name>com.xxx.xxxx.xxx.Demo</name>
+        #描述
+        <desc>测试</desc>
+        #备用应用ID
+        <appid>com.xxx.xxx.xxx;test;</appid>
+		#使用截图方式 appium/idevicescreenshot
+		<screenshot>idevicescreenshot</screenshot>
+		#是否捕获系统Crash
+    		<syscrash>false</syscrash>
+    		#是否捕获应用Crash
+    		<appcrash>false</appcrash>
+    		#app日志TAG***
+		<idevicesyslogtag>xxxx</idevicesyslogtag>
+    		#是否强制重新初始化driver
+    		<initdriver>true</initdriver>
+    		#参数设置
+    		<params>a=1;b=2</params>
+		#appium启动初始配置
+		    <capability>
+		        <deviceName>iphone 6</deviceName>
+		        <platformVersion>8.4</platformVersion>
+		        <udid>af4ff49d34f64251a8d00f3f4826740c3ef28b2f</udid>
+		        <automationName>XCUITest</automationName>
+		        <platformName>iOS</platformName>
+		        #IPA绝对路径
+		        <app></app>
+		        #不需要重置应用
+		        <noReset>flase</noReset>
+		        #是否自动启动#
+		        <autoLaunch>true</autoLaunch>
+		        #bundleId***
+		        <bundleId>com.xxx.xxx.xxx</bundleId>
+		        #wdaLocalPort端口设置
+		        <wdaLocalPort>8100</wdaLocalPort>
+		        	#/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent
+		        #每次启动时覆盖session，否则第二次后运行会报错不能新建session <sessionOverride>true</sessionOverride>
+				#TEAM ID和账号名 <xcodeOrgId>BBK276KSZR</xcodeOrgId> <xcodeSigningId>qq297000498@sina.cn</xcodeSigningId>
+		    </capability>
+        </item>
+     -->
+	<!-- 邮件配置 -->
+    <email>
+        <!--是否发送邮件-->
+		<send>false</send>
+		<smtp></smtp>
+		<account></account>
+		<password></password>
+		<!-- 发送给谁 -->
+		<to></to>
+		<!-- 抄送给谁 -->
+		<cc></cc>
+	</email>
+	
+	<!--微信通知配置 -->
+	<wechat>
+		<!-- 是否发送通知 -->
+		<send>false</send>
+		<!-- 人员列表 name=userid; -->
+		<people_list></people_list>
+	</wechat>
+</root>

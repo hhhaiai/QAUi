@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPaneMain" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.viewer.wechat.MemberListController">
+   <children>
+      <VBox fx:id="VboxMain" prefHeight="650.0" spacing="10.0">
+         <children>
+            <Label fx:id="lbl_title" text="加载中..." textFill="#55d2f2" />
+            <ScrollPane prefHeight="530.0">
+               <content>
+                  <VBox fx:id="vBox_Member" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="TOP_CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="btn_refresh" mnemonicParsing="false" text="刷新" />
+                  <Button fx:id="btn_expanded" mnemonicParsing="false" text="展开" />
+                  <Button fx:id="btn_select_all" mnemonicParsing="false" text="全选" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" spacing="10.0">
+               <children>
+                  <Button fx:id="btn_ok" mnemonicParsing="false" text="确定" />
+                  <Button fx:id="btn_cancel" mnemonicParsing="false" text="取消" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

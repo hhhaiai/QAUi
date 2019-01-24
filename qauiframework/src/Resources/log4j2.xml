@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<configuration status="error" monitorInterval="120">    
+    <properties>  
+        <property name="LOG_HOME">Logs</property>  
+        <property name="FILE_NAME">Log4j</property>  
+    </properties>
+  	<appenders>    
+    <Console name="Console" target="SYSTEM_OUT">    
+      <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>    
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%c,%M:%L] %n%-level: %msg%n"/>    
+    </Console>  
+      
+    <File name="Logfile" fileName="${LOG_HOME}/${FILE_NAME}-time.txt" append="false">    
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%c,%M,%L]:      %msg%n"/>    
+    </File>  
+	<!--  
+  	<RollingRandomAccessFile name="RollingFile"  
+            fileName="${LOG_HOME}/${FILE_NAME}.txt"  
+            filePattern="${LOG_HOME}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy_MMdd_HHmm_ss}.txt">  
+            <PatternLayout  
+                pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%c,%M,%L]:      %msg%n" />  
+            <Policies>  
+               
+                <SizeBasedTriggeringPolicy size="15 MB" />  
+            </Policies>  
+            <DefaultRolloverStrategy max="50" />  
+   	</RollingRandomAccessFile>
+	-->
+  </appenders>  
+ 
+  <loggers>    
+    <root level="info">    
+      <appender-ref ref="Logfile"/>    
+      <appender-ref ref="Console"/>   
+      <!--
+       <appender-ref ref="RollingFile"/>     
+       -->
+    </root>    
+  </loggers>    
+</configuration> 

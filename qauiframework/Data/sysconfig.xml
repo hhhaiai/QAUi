@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <Android>
+        <!-- Android sdk 路径 -->
+    	<androidSDK>/Users/auto/Documents/AndroidSDK</androidSDK>
+    	<!-- 执行完后灭屏 -->
+    	<androidScreenOut>true</androidScreenOut>
+    </Android>
+    <iOS>
+         <!--IOS 命令路径  -->
+   		 <MACcmd>/usr/local/bin</MACcmd>
+    </iOS>
+    <!-- appium启动初始配置 -->
+    <appiumServerUrl>http://0.0.0.0:4723/wd/hub</appiumServerUrl>
+    <!-- 检查应用是否停止间隔:秒 -->
+	<checkOnSurface>10</checkOnSurface>
+	<!-- 查找元素默认等待时间:秒 -->
+	<waitforElement>4</waitforElement>
+	<!-- 执行操作后默认等待时间:毫秒 -->
+	<waitAfterOperation>0</waitAfterOperation>
+    <!-- 测试报告配置 -->
+    <report>
+        <!-- 报告服务器地址,如果未架设,则不填 -->
+	    <QAreporter_url/>
+	    <!-- 报告存储路径,默认为桌面QAUiReport-->
+	    <reportPath>/Users/auto/Desktop</reportPath>
+        <!-- Android屏幕录制分辨率,截图分辨率:高(宽由图片宽高比确定),0表示不改变分辨率 -->
+        <picTargetHight>854</picTargetHight>
+        <!-- 图片标记字体大小:默认2,小=1,中=2,大=3 -->
+        <picFont>2</picFont>
+    </report>
+    <!-- 版本号,用于自动更新 -->
+    <version>
+    		<verQAUiFramework>V2.1031.1</verQAUiFramework>
+    		<verQAUpdateTool>V1.1111.2</verQAUpdateTool>
+    </version>
+    <!-- 微信通知token -->
+    <wechat>
+    	<name>Then科技</name>
+    	<corpid/>
+    	<corpsecret/>
+    	<agentid/>
+    </wechat>
+</config>

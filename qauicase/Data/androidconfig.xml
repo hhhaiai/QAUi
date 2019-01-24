@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 场景配置 PS=场景类118502860530   123qwe-->
+    <scene>
+
+	</scene>
+	<!-- Android场景设置模板 ,可以在Data文件夹中额外创建多个以androidscene_开头的xml文件,用来存放不同场景
+    <item>
+        #场景包名.类名***(带*号为必填项)
+        <name>com.xxx.xxx.Demo</name>
+        #自动设置设备系统:wifi开,自动时间时区,自动亮度开,屏幕休眠10分钟,输入法切换为非appium输入法
+        <setdevice>true</setdevice>
+        #描述
+        <desc>测试</desc>
+        #使用截图方式 appium/adb/ddmlib
+		<screenshot>adb</screenshot>
+		#是否捕获系统Crash
+    		<syscrash>false</syscrash>
+    		#是否捕获应用Crash
+    		<appcrash>false</appcrash>
+    		#自定义日志捕获,以分号间隔
+    		<userlogcatch>Crash=Fatal exception start;</userlogcatch>
+    		#是否强制重新初始化driver
+    		<initdriver>false</initdriver>
+    		#参数设置
+    		<params>a=1,b=2</params>
+		#appium启动初始配置
+		    <capability>http://appium.io/docs/en/writing-running-appium/caps/index.html
+		        <udid></udid>
+		        <deviceName></deviceName>
+		        <platformVersion></platformVersion>
+		        <automationName>uiautomator2</automationName>
+		        <platformName>Android</platformName>
+		        #app路径
+		        <app></app>
+		        #不需要重置应用
+		        <noReset>false</noReset>
+		        #是否自动启动,非标准属性
+		        <autoLaunch>true</autoLaunch>
+		        #包名***
+		        <appPackage>xxx.xxx.xxx</appPackage>
+		        #启动Acitivity名***
+		        <appActivity>xxx.xxx.xxx.xxxActivity</appActivity>
+		        #每次启动时覆盖session，否则第二次后运行会报错不能新建session<sessionOverride>true</sessionOverride>
+		        #设置默认键盘为appium的键盘
+		        <unicodeKeyboard>true</unicodeKeyboard>
+		        # 退出后还原键盘
+		        <resetKeyboard>true</resetKeyboard>
+		        #安装时不对apk进行重签名，设置很有必要，否则有的apk在重签名之后无法正常使用
+		        <noSign>true</noSign>
+		    </capability>
+        </item>
+     -->
+    	<monkey_sys>
+	  	<packages>settings=com.android.settings;</packages>
+	  	
+	  	<ignore_crashes>true</ignore_crashes>
+	  	<ignore_timeouts>false</ignore_timeouts>
+	  	<ignore_security_exceptions>true</ignore_security_exceptions>
+	  	<ignore_native_crashes>true</ignore_native_crashes>
+	  	<monitor_native_crashes>true</monitor_native_crashes>
+		<pct_touch>60</pct_touch><!--  0-15 0表示事件类型,15表示默认百分比,触摸事件。即在某一位置的Down-Up（手指的放下和抬起）事件。Down（ACTION_DOWN）和Up（ACTION_UP）的坐标临近，但并非相同。-->
+		<pct_motion>10</pct_motion><!-- 1-10 动作事件。以Down（ACTION_DOWN）开始，Up（ACTION_UP）结尾，中间至少有一次Move（ACTION_MOVE） -->
+		<pct_trackball>10</pct_trackball><!-- 3-15 轨迹球事件。即单纯的Move（ACTION_MOVE） -->
+		<pct_nav>1</pct_nav><!-- 基本导航事件。即来自于方向输入设备的上下左右操作。 -->
+		<pct_majornav>8</pct_majornav><!--  7-15 主导航事件。即Navigation Bar的确认，菜单，返回键等。 -->
+		<pct_syskeys>1</pct_syskeys><!--8-2 系统按键事件。即系统保留按键，如HOME键，BACK键，拨号键，挂断键，音量键等。  -->
+		<pct_appswitch>5</pct_appswitch><!-- 9-2 应用启动事件 -->
+		<pct_anyevent>5</pct_anyevent><!--  11-13 其他未提及事件。该事件可能包含其他上述事件。-->
+		<customize>test</customize>  
+		  		
+		<analysis_show>35</analysis_show>
+		<analysis_arow>40</analysis_arow>
+  		<analysis_arowword>80</analysis_arowword>  
+  		<analysis_showduplicate>false</analysis_showduplicate>  
+  		<isreconnect>true</isreconnect>  
+	</monkey_sys>
+	<!-- 邮件配置 -->
+    <email>
+        <!--是否发送邮件-->
+		<send>false</send>
+		<smtp></smtp>
+		<account></account>
+		<password></password>
+		<!-- 发送给谁 -->
+		<to></to>
+		<!-- 抄送给谁 -->
+		<cc></cc>
+	</email>
+	<!--微信通知配置 -->
+	<wechat>
+		<!-- 是否发送通知 -->
+		<send>true</send>
+		<!-- 人员列表 name=userid; -->
+		<people_list></people_list>
+	</wechat>
+</root>

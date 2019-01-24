@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 场景配置 PS=场景类-->
+    <scene>
+        <item>
+            <name>com.test.Demo</name>
+            <desc/>
+            <capability>
+                <autoLaunch>false</autoLaunch>
+                <noReset>true</noReset>
+                <appPackage>com.android.settings</appPackage>
+                <appActivity>com.android.settings.MainSettings</appActivity>
+            </capability>
+        </item>
+    </scene>
+</root>

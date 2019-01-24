@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<welcome-file-list>
+	<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+
+<display-name>QAreporter</display-name>
+ <listener>
+   <listener-class>com.servlet.ServerInit</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>FileServlet</servlet-name>
+    <servlet-class>com.servlet.FileServlet</servlet-class>
+  </servlet>
+ <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>/FileServlet</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
